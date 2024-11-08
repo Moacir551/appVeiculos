@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Entrada/Saida Veículos</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" class="css">
+    <!--JS-->
+    <script src="js/script.js" defer></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+
+    <div class="container">
+        <header>
+            <h4>VEICULOS</h4>
+        </header>
+        <nav id="navMenu">
+            <div id="navMovimento" onclick="limpaFormulario()">MOVIMENTO</div>
+            <div id="navCadastrar" onclick="paginaCadastrar()">CADASTRAR</div>
+        </nav>
+        <form action="" id="formContainer">
+
+            <div id="divLocalizar" class="divLocalizar">
+                <input type="text" name="" id="formInputPlaca" placeholder="Digite a placa">
+                <div id="formInputPesquisa" onclick="localizarRegistro()">
+                    <i class="fa fa-search"></i>
+                </div>
+                <!--<input type="text" id="formInputPesquisa" value="Pesquisar">-->
+            </div>
+
+            <div id="divFormDados" class="formDivDados">
+                <input type="text" id="inputPlaca" placeholder="Digite a placa">
+                <input type="text" id="inputNomeMotorista" placeholder="Digite motorista">
+                <input type="text" id="inputCpf" placeholder="Digite Digite CPF">
+                <input type="text" id="inputNf" placeholder="Digite NF">
+
+                <div id="divTitHoras">
+                    <label>HE</label>
+                    <label>HS</label>
+                    <label>HE</label>
+                    <label>HS</label>
+                </div>
+
+                <div id="divHoras" class="divHoras">
+                    
+                    <input type="text" id="HE1" class="horas" placeholder="__:__">
+                    <input type="text" id="HS1" class="horas" placeholder="__:__">
+                    <input type="text" id="HE2" class="horas" placeholder="__:__">
+                    <input type="text" id="HS2" class="horas" placeholder="__:__">
+
+                </div>
+
+                <div id="divModCol">
+                
+                    <select name="modelo" id="modelo" placeholder="Digite o Modelo">
+                        <option value="hr">HR</option>
+                        <option value="toco">Toco</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="strada">Strada</option>
+                        <option value="audi">Audi</option>
+
+                    </select>
+
+                    <select name="operacao" id="operacao" placeholder="Digite a operacao">
+                        <option value="coleta">COLETA</option>
+                        <option value="entrega">ENTREGA</option>
+                        <option value="colaborador">COLABORADOR</option>
+
+                    </select>
+    
+                </div>
+
+                <div id="divObs">
+                
+                    <textarea name="" id="textareaObs" rows="4" cols="29" placeholder="Adicione observações..." >
+    
+                    </textarea>
+
+                </div>
+
+                <div class="divAcoes" id="divAcoes">
+                    <button type="button" id="btnLimpar" >Limpar</button>
+                    <button type="button" id="btnAtualizar">Atualizar</button>
+                    <button type="button" id="btnIncluir">Incluir</button>
+                </div>
+
+            </div>
+
+        </form>
+
+        <!--aqui botoes-->
+
+        <div id="nomes">
+
+        <!--<span id="divSpanMot"></span>-->
+
+        </div>
+            
+        
+    </div>
+
+</head>
+<body>
+    
+</body>
+</html>
