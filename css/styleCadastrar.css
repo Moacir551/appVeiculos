@@ -1,0 +1,51 @@
+*{
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+/*CONTAINER*/
+#containerCadastrar{
+    max-width: 300px;
+    min-height: 400px;
+    border: 1px solid rgb(199, 191, 191);
+    margin: 3rem auto;
+    padding: 10px;
+}
+/*FORM*/
+#frmCampos{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+#frmCampos input{
+    padding: 10px;
+    border: 1px solid rgb(199, 191, 191);
+}
+#frmBotoes{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+#frmBotoes input{
+    font-weight: bold;
+    flex:1;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid rgb(199, 191, 191);
+}
+#frmBotoes input:hover{
+    background-color: rgb(247, 241, 241);
+}
+#divTipo{
+    display: flex;
+    
+    padding: 0px 10px;
+}
+#divTipo select{
+    flex: 1;
+    border: 1px solid rgb(199, 191, 191);
+    padding: 10px;
+}

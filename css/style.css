@@ -1,1 +1,220 @@
-criando o arquivo style.css
+*{
+    padding:0;
+    margin:0;
+    font-family: Helvetica, sans-serif;
+    color:black;
+    box-sizing: border-box;
+
+}
+
+/*OCULTAR ELEMENTO*/
+.hide{
+    display: none;
+    /*visibility: hidden;*/
+}
+
+/*CONTAINER*/
+.container{
+    display: block;
+    max-width:300px;
+    min-height: 400px;
+    margin: 3rem auto 0;
+    border: 1px solid rgb(202, 198, 198);
+    border-radius: 5px;
+    padding: 1.3rem;
+    background-color: #fdfdfd; 
+    height: 100%;
+
+}
+/*HEADER*/
+header {
+    width: 100%;
+    background-color: black;  
+    border: 1px solid black;
+    border-radius: 3px;
+}
+/*NAV MENU*/
+#navMenu{
+    DISPLAY: FLEX;
+    background-color: red;
+
+}
+#navMenu div{
+    flex: 50%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.6rem;
+    text-align: center;
+    border: 1px solid white;
+    
+}
+#navMenu div:hover{
+    color: yellow;
+}
+#formContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+    min-height: 50%;
+
+}
+/*DADOS*/
+.formDivDados{
+    width: 100%;
+    height: 100%;
+}
+.formDivDados input, select{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+
+}
+header h4{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+#divLocalizar{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+#formInputPlaca{
+    width: 300px;
+    flex: 8;
+    padding: 5px;
+}
+#formInputPesquisa{
+    border: 0.1px solid black;
+    border-radius: 0px 5px 5px 0px;
+    width: 50px;
+    flex: 1;
+}
+#formInputPesquisa i{
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    background-color: black;
+}
+#divTitHoras{
+    display: flex;
+    font-size: 0.5rem;
+    width: 100%;
+    font-weight: bold;
+    padding: 1px;
+    margin-top: 10px;
+}
+#divTitHoras label{
+    font-size: 0.8rem;
+    text-align: center;
+    flex: 1;
+}
+
+.divHoras{
+    display: flex;
+    padding: 3px;
+    margin-bottom: 10px;
+
+}
+.divHoras input{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 25%;
+    flex: 1;
+}
+#divModCol{
+    display: flex;
+    padding: 5px;
+
+}
+#modelo{
+    flex: 1;
+    margin: 5px;
+}
+#operacao{
+    flex: 1;
+    margin: 5px;
+}
+#observacao{
+    width: 100%;
+}
+.divLocalizar button{
+    background-color: black;
+    flex: 1;
+    transition: 0.2s;
+}
+.divLocalizar button:hover{
+    background-color: rgb(70, 60, 60);
+}
+.divLocalizar button i{
+    color: white;
+}
+.divAcoes{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0px;
+}
+.divAcoes button{
+    display: flex;/*aqui*/
+    padding: 10px;
+    flex: 1;
+    background-color: black; 
+    color: white;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+.divAcoes button:hover{
+    color: yellow;
+}
+/*LISTA*/
+#nomeMotorista{
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+
+}
+#nomes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 0.8rem;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+#divSpanMot{
+    margin-bottom: 0px;
+    flex: 1;
+}
+#nomes div{
+    display:flex;
+}
+#nomes div i{
+    color: green;
+    font-size: 0.8rem;
+    padding: 10px;
+}
+#nomes div #divSpanMot{
+    padding: 5px;
+    border: 1px solid rgba(2, 44, 2, 0.411);
+    border-radius: 3px;
+    margin-bottom: 2px;
+    transition: 0.5s;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    
+}
+#nomes > #divSpanMot:hover{
+    color: yellow;
+    background-color: black;
+}
+
